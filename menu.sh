@@ -65,34 +65,42 @@ echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━�
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "[ ${Blue}TODAY ${NC}: ${GREEN}$ttoday ] [ ${Blue}MONTH ${NC}: ${GREEN}$bmon ]"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[1;97;101m               INFORMATION                \e[0m"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[1;36m ${Blue}System OS${NC}     : \033[1;32m$MODEL${NC}"
-echo -e "\033[1;36m ${Blue}Server RAM${NC}    : \033[1;32m$RAM MB $NC"
-echo -e "\033[1;36m ${Blue}Uptime Server${NC} : \033[1;32m$SERONLINE${NC}"
-echo -e "\033[1;36m ${Blue}Date${NC}          : \033[1;32m$DATEVPS | $TIMEZONE${NC}"
-echo -e "\033[1;36m ${Blue}Domain${NC}        : \033[1;32m$domain${NC}"
-echo -e "\033[1;36m ${Blue}NS Domain${NC}     : \033[1;32m$NS${NC}"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[44;1;39m                    ⇱ SERVER INFORMATION ⇲                       \E[0m"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"                                                                      
+echo -e " ${YELLOW}System OS${NC}     : ${Cyan}$MODEL${NC}"
+echo -e " ${YELLOW}Server RAM${NC}    : ${Cyan}$RAM MB $NC"
+echo -e " ${YELLOW}Uptime Server${NC} : ${Cyan}$SERONLINE${NC}"
+echo -e " ${YELLOW}Date${NC}          : ${Cyan}$DATEVPS | $TIMEZONE${NC}"
+echo -e " ${YELLOW}Domain${NC}        : ${Cyan}$domain${NC}"
+echo -e " ${YELLOW}NS Domain${NC}     : ${Cyan}$NS${NC}"
+echo -e " ${YELLOW}IP VPS${NC}        : ${Cyan}$IPVPS${NC}"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[1;97;101m              CREATE ACCOUNT              \e[0m"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[1;36m   ${grenbo}1. ${NC} \033[1;36mSSH&OVPN ${NC}"
-echo -e "\033[1;36m   ${grenbo}2. ${NC} \033[1;36mVMESS${NC}"
-echo -e "\033[1;36m   ${grenbo}3. ${NC} \033[1;36mVLESS${NC}"
-echo -e "\033[1;36m   ${grenbo}4. ${NC} \033[1;36mTROJAN${NC}"
-echo -e "\033[1;36m   ${grenbo}5. ${NC} \033[1;36mSS${NC}"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[1;97;101m                  OTHER                   \e[0m"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[1;36m   ${grenbo}6. ${NC} \033[1;36mRUNNING SYSTEM${NC}"     "\033[1;36m    ${grenbo}13.${NC} \033[1;36mRESTART SERVICE${NC}"
-echo -e "\033[1;36m   ${grenbo}7. ${NC} \033[1;36mBACKUP & RESTORE${NC}"  "\033[1;36m  ${grenbo}14.${NC} \033[1;36mRESTART SERVER${NC}"
-echo -e "\033[1;36m   ${grenbo}8. ${NC} \033[1;36mPORT VPS INFO${NC}"  "\033[1;36m     ${grenbo}15.${NC} \033[1;36mAUTO KILL${NC}"
-echo -e "\033[1;36m   ${grenbo}9. ${NC} \033[1;36mLOAD VPS INFO${NC}"  "\033[1;36m     ${grenbo}16.${NC} \033[1;36mAUTO REBOOT${NC}"
-echo -e "\033[1;36m   ${grenbo}10.${NC} \033[1;36mSPEEDTEST${NC}"   "\033[1;36m         ${grenbo}17.${NC} \033[1;36mUPDATE SCRIPT${NC}"
-echo -e "\033[1;36m   ${grenbo}11.${NC} \033[1;36mCHANGE DOMAIN${NC}"  "\033[1;36m     ${grenbo}18.${NC} \033[1;36mCLEAR LOG${NC}"
-echo -e "\033[1;36m   ${grenbo}12.${NC} \033[1;36mCHANGE BANNER${NC}" "\033[1;36m     ${grenbo}19.${NC} \033[1;36mCLEAR ALL AKUN EXP${NC}"
+echo -e "\E[44;1;39m                     ⇱ MENU SERVICE ⇲                         \E[0m"
+
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+
+echo -e " ${BICyan}[${BIWhite}01${BICyan}]${RED} •${NC} ${CYAN}SSH MENU        $NC  ${BICyan}[${BIWhite}12${BICyan}]${RED} • ${NC}${CYAN}GEN-SSL / CERTV $NC"
+
+echo -e " ${BICyan}[${BIWhite}02${BICyan}]${RED} •${NC} ${CYAN}VMESS MENU      $NC  ${BICyan}[${BIWhite}13${BICyan}]${RED} • ${NC}${CYAN}BANNER CHANGE $NC"
+
+echo -e " ${BICyan}[${BIWhite}03${BICyan}]${RED} •${NC} ${CYAN}VLESS MENU      $NC  ${BICyan}[${BIWhite}14${BICyan}]${RED} • ${NC}${CYAN}CEK RUNNING SERVICE $NC"
+
+echo -e " ${BICyan}[${BIWhite}04${BICyan}]${RED} •${NC} ${CYAN}TROJAN MENU     $NC  ${BICyan}[${BIWhite}15${BICyan}]${RED} • ${NC}${CYAN}CEK TRAFIC $NC"
+
+echo -e " ${BICyan}[${BIWhite}05${BICyan}]${RED} •${NC} ${CYAN}S-SOCK MENU     $NC  ${BICyan}[${BIWhite}16${BICyan}]${RED} • ${NC}${CYAN}SPEEDTEDT  $NC"
+
+echo -e " ${BICyan}[${BIWhite}06${BICyan}]${RED} •${NC} ${CYAN}TENDANG         $NC  ${BICyan}[${BIWhite}17${BICyan}]${RED} • ${NC}${CYAN}CEK BANDWIDTH USE $NC"
+
+echo -e " ${BICyan}[${BIWhite}07${BICyan}]${RED} •${NC} ${CYAN}AUTO REBOOT     $NC  ${BICyan}[${BIWhite}18${BICyan}]${RED} • ${NC}${CYAN}LIMMIT SPEED $NC"
+
+echo -e " ${BICyan}[${BIWhite}08${BICyan}]${RED} •${NC} ${CYAN}REBOOT          $NC  ${BICyan}[${BIWhite}19${BICyan}]${RED} • ${NC}${CYAN}WEBMIN $NC"
+
+echo -e " ${BICyan}[${BIWhite}09${BICyan}]${RED} •${NC} ${CYAN}RESTART SERVICE $NC  ${BICyan}[${BIWhite}20${BICyan}]${RED} • ${NC}${CYAN}SCRIPT INFO $NC"
+
+echo -e " ${BICyan}[${BIWhite}10${BICyan}]${RED} •${NC} ${CYAN}BACKUP {OFF}    $NC  ${BICyan}[${BIWhite}21${BICyan}]${RED} • ${NC}${CYAN}CLEAR LOG $NC"
+
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[1;97;101m               NEWBIE TUNNEL              \e[0m"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -157,10 +165,10 @@ case $menu in
     wget ${UPDATE}update.sh && chmod +x update.sh && ./update.sh
     ;;
 18)
-   clearlog
+   xp
    ;;
 19)
-   xp
+   clearlog
    ;;
 *)
     menu
