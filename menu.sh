@@ -180,6 +180,6 @@ case $menu in
    exit
    ;;
 *)
-    menu
+    exit
     ;;
 esac
