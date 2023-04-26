@@ -20,8 +20,10 @@ IBlue='\033[0;94m'        # Blue
 IPurple='\033[0;95m'      # Purple
 ICyan='\033[0;96m'        # Cyan
 IWhite='\033[0;97m'       # White
-CYAN='\033[0;96]'         # Cyan
+CYAN='\033[0;96m]'        # Cyan
+YELLOW='\033[0;93m]'      # Yellow
 NC='\e[0m'
+
 UPDATE="https://raw.githubusercontent.com/Zeadxt/rzk/main/"
 BOT="https://raw.githubusercontent.com/Zeadxt/rzk/main/"
 ISP=$(cat /etc/xray/isp)
@@ -68,7 +70,7 @@ bmon="$(vnstat -m | grep `date +%G-%m` | awk '{print $8" "substr ($9, 1 ,3)}' | 
 #KonZ
 vlx=$(grep -c -E "^#vl# " "/etc/xray/config.json")
 let vla=$vlx/2
-vmc=$(grep -c -E "^##vm " "/etc/xray/config.json")
+vmc=$(grep -c -E "^#vm# " "/etc/xray/config.json")
 let vma=$vmc/2
 ssh1="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
 trx=$(grep -c -E "^#tr# " "/etc/xray/config.json")
@@ -88,9 +90,9 @@ echo -e " ${YELLOW}DOMAIN${NC}             : ${Cyan}$domain${NC}"
 echo -e " ${YELLOW}NS DOMAIN${NC}          : ${Cyan}$NS${NC}"
 echo -e " ${YELLOW}IP VPS${NC}             : ${Cyan}$IPVPS${NC}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "[ ${Blue}XRAY: ${status_xray} ] [ ${Blue}NGINX: ${status_nginx} ] [ ${Blue}HAPROXY: ${status_haproxy} ]"
+echo -e "[ ${Blue}XRAY: ${status_xray} ]    [ ${Blue}NGINX: ${status_nginx} ]    [ ${Blue}HAPROXY: ${status_haproxy} ]"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "    ${RED}[ TODAY : $ttoday ]                ${RED}[ MONTH : $bmon ] "
+echo -e "    ${RED}[ TODAY : $ttoday ]${NC}                ${RED}[ MONTH : $bmon ]${NC} "
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ MENU SERVICE ⇲                         \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
@@ -105,11 +107,8 @@ echo -e " ${BICyan}[${BIWhite}08${BICyan}]${RED} •${NC} ${CYAN}INFO PORT      
 echo -e " ${BICyan}[${BIWhite}09${BICyan}]${RED} •${NC} ${CYAN}VPS INFO        $NC  ${BICyan}[${BIWhite}19${BICyan}]${RED} • ${NC}${CYAN}CLEAR LOG $NC"
 echo -e " ${BICyan}[${BIWhite}10${BICyan}]${RED} •${NC} ${CYAN}SPEEDTEST       $NC  ${BICyan}[${BIWhite}20${BICyan}]${RED} • ${NC}${CYAN}EXIT FROM SCRIPT $NC"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-
-echo -e "\E[44;1;39m                    ⇱ SERVER INFORMATION ⇲                       \E[0m"
-
+echo -e "\E[44;1;39m                ⇱ FREE TUNNELING PROJECT ⇲                       \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"                                                                      
-
 echo -e "${BICyan}┌────────────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC  ${BICyan}│"
 echo -e "${BICyan}│  \033[0m ${BICyan} $ssh1        $vma           $vla          $tra              $ssa   $NC    ${BICyan} │"
