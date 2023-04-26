@@ -81,10 +81,10 @@ let ssa=$ssx/2
 
 clear
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                   ⇱ SERVER INFORMATION ⇲                      \E[0m"
+echo -e "\E[44;1;39m                   ⇱ SERVER INFORMATION ⇲                     \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"                                                                      
 echo -e " ${YELLOW}⇲ SYSTEM OS | CPU USE${NC} : ${Cyan}$MODEL | CPU USE $vcp%${NC}"
-echo -e " ${YELLOW}⇲ SERVER RAM | USAGE${NC}  : ${Cyan}$RAM MB  | $rak MB${NC}"
+echo -e " ${YELLOW}⇲ SERVER RAM | USAGE${NC}  : ${Cyan}$RAM MB  | RAN USE $rak MB${NC}"
 echo -e " ${YELLOW}⇲ SERVER UPTIME${NC}       : ${Cyan}$SERONLINE${NC}"
 echo -e " ${YELLOW}⇲ DATE & TIME${NC}         : ${Cyan}$DATEVPS | $TIMEZONE${NC}"
 echo -e " ${YELLOW}⇲ DOMAIN${NC}              : ${Cyan}$domain${NC}"
@@ -108,7 +108,7 @@ echo -e " ${BICyan}[${BIWhite}08${BICyan}]${BIRed} •${NC} ${CYAN}INFO PORT    
 echo -e " ${BICyan}[${BIWhite}09${BICyan}]${BIRed} •${NC} ${CYAN}VPS INFO        $NC  ${BICyan}[${BIWhite}19${BICyan}]${BIRed} • ${NC}${CYAN}CLEAR LOG $NC"
 echo -e " ${BICyan}[${BIWhite}10${BICyan}]${BIRed} •${NC} ${CYAN}SPEEDTEST       $NC  ${BICyan}[${BIWhite}20${BICyan}]${BIRed} • ${NC}${CYAN}EXIT FROM SCRIPT $NC"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m               ⇱ FREE TUNNELING PROJECT ⇲                      \E[0m"
+echo -e "\E[44;1;39m               ⇱ FREE TUNNELING PROJECT ⇲                     \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"                                                                      
 echo -e "${BICyan}┌────────────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC ${BICyan} │"
@@ -117,66 +117,66 @@ echo -e "${BICyan}└───────────────────�
 echo -e ""
 read -p "Select From Options [ 1 - 20 ] : " menu
 case $menu in
-1)
+1)clear ;
     ssh
     ;;
-2)
+2)clear ;
     vmess
     ;;
-3)
+3)clear ;
     vless
     ;;
-4)
+4)clear ;
     trojan
     ;;
-5)
+5)clear ;
     shadowsocks
     ;;
-6)
+6)clear ;
     run
     ;;
-7)
+7)clear ;
     get-backres
     ;;
-8)
+8)clear ;
     portin
     ;;
-9)
+9)clear ;
     gotop
     ;;
-10)
+10)clear ;
     clear
     speedtest
     ;;
-11)
+11)clear ;
     get-domain
     ;;
-12)
+12)clear ;
     nano /etc/issue.net
     ;;
-13)
+13)clear ;
     seres
     ;;
-14)
+14)clear ;
     reboot
     ;;
 
-15)
+15)clear ;
     autokill
     ;;
-16)
+16) clear ;
     auto-reboot
     ;;
-17)
+17) clear ;
     wget ${UPDATE}update.sh && chmod +x update.sh && ./update.sh
     ;;
-18)
+18)clear ;
    xp
    ;;
-19)
+19)clear ;
    clearlog
    ;;
-20)
+20)clear ;
    exit
    ;;
 *)
