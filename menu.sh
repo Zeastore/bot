@@ -14,6 +14,7 @@ On_IPurple='\033[0;105m'  #
 On_IRed='\033[0;101m'
 IBlack='\033[0;90m'       # Black
 Red='\033[0;91m'         # Red
+RED='\033[0;91'
 IGreen='\033[0;92m'       # Green
 IYellow='\033[0;93m'      # Yellow
 IBlue='\033[0;94m'        # Blue
@@ -82,17 +83,17 @@ clear
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                   ⇱ SERVER INFORMATION ⇲                      \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"                                                                      
-echo -e " ${YELLOW}SYSTEM OS | CPU USE${NC}: ${Cyan}$MODEL | $LOADVPU%${NC}"
-echo -e " ${YELLOW}SERVER RAM | USAGE${NC} : ${Cyan}$RAM MB $NC | $USAGERAM MB"
-echo -e " ${YELLOW}SERVER UPTIME${NC}      : ${Cyan}$SERONLINE${NC}"
-echo -e " ${YELLOW}DATE & TIME${NC}        : ${Cyan}$DATEVPS | $TIMEZONE${NC}"
-echo -e " ${YELLOW}DOMAIN${NC}             : ${Cyan}$domain${NC}"
-echo -e " ${YELLOW}NS DOMAIN${NC}          : ${Cyan}$NS${NC}"
-echo -e " ${YELLOW}IP VPS${NC}             : ${Cyan}$IPVPS${NC}"
+echo -e " ${YELLOW}SYSTEM OS | CPU USE${NC} : ${Cyan}$MODEL | $LOADCPU%${NC}"
+echo -e " ${YELLOW}SERVER RAM | USAGE${NC}  : ${Cyan}$RAM MB  | $USAGERAM MB${NC}"
+echo -e " ${YELLOW}SERVER UPTIME${NC}       : ${Cyan}$SERONLINE${NC}"
+echo -e " ${YELLOW}DATE & TIME${NC}         : ${Cyan}$DATEVPS | $TIMEZONE${NC}"
+echo -e " ${YELLOW}DOMAIN${NC}              : ${Cyan}$domain${NC}"
+echo -e " ${YELLOW}NS DOMAIN${NC}           : ${Cyan}$NS${NC}"
+echo -e " ${YELLOW}IP VPS${NC}              : ${Cyan}$IPVPS${NC}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "     [ ${Blue}XRAY: ${status_xray} ]      [ ${Blue}NGINX: ${status_nginx} ]      [ ${Blue}HAPROXY: ${status_haproxy} ]"
+echo -e "     [ ${Cyan}XRAY:${NC} ${status_xray} ]      [ ${Cyan}NGINX:${NC} ${status_nginx} ]      [ ${Cyan}HAPROXY:${NC} ${status_haproxy} ]"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "    ${RED}[ TODAY : $ttoday ]${NC}                ${RED}[ MONTH : $bmon ]${NC} "
+echo -e "    ${RED}[ TODAY : $ttoday ]${NC}              ${RED}[ MONTH : $bmon ]${NC} "
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ MENU SERVICE ⇲                         \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
