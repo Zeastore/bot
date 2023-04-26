@@ -164,51 +164,51 @@ echo -e "${BICyan}└───────────────────�
 echo -e ""
 read -p "Select From Options [ 1 - 20 ] : " menu
 case $menu in
-1)clear ;
+1) clear ;
     ssh
     ;;
-2)clear ;
+2) clear ;
     vmess
     ;;
-3)clear ;
+3) clear ;
     vless
     ;;
-4)clear ;
+4) clear ;
     trojan
     ;;
-5)clear ;
+5) clear ;
     shadowsocks
     ;;
-6)clear ;
+6) clear ;
     run
     ;;
-7)clear ;
+7) clear ;
     get-backres
     ;;
-8)clear ;
+8) clear ;
     portin
     ;;
-9)clear ;
+9) clear ;
     gotop
     ;;
-10)clear ;
+10) clear ;
     clear
     speedtest
     ;;
-11)clear ;
+11) clear ;
     get-domain
     ;;
-12)clear ;
+12) clear ;
     nano /etc/issue.net
     ;;
-13)clear ;
+13) clear ;
     seres
     ;;
-14)clear ;
+14) clear ;
     reboot
     ;;
 
-15)clear ;
+15) clear ;
     autokill
     ;;
 16) clear ;
@@ -217,13 +217,13 @@ case $menu in
 17) clear ;
     wget ${UPDATE}update.sh && chmod +x update.sh && ./update.sh
     ;;
-18)clear ;
+18) clear ;
    xp
    ;;
-19)clear ;
+19) clear ;
    clearlog
    ;;
-20)clear ;
+20) clear ;
    exit
    ;;
 *)
