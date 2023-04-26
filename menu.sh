@@ -13,15 +13,15 @@ UWhite='\033[4;37m'       # White
 On_IPurple='\033[0;105m'  #
 On_IRed='\033[0;101m'
 IBlack='\033[0;90m'       # Black
-IRed='\033[0;91m'         # Red
+Red='\033[0;91m'         # Red
 IGreen='\033[0;92m'       # Green
 IYellow='\033[0;93m'      # Yellow
 IBlue='\033[0;94m'        # Blue
 IPurple='\033[0;95m'      # Purple
-ICyan='\033[0;96m'        # Cyan
+Cyan='\033[0;96m'        # Cyan
 IWhite='\033[0;97m'       # White
-CYAN='\033[0;96m]'        # Cyan
-YELLOW='\033[0;93m]'      # Yellow
+CYAN='\033[0;96m'        # Cyan
+YELLOW='\033[0;93m'      # Yellow
 NC='\e[0m'
 
 UPDATE="https://raw.githubusercontent.com/Zeadxt/rzk/main/"
@@ -80,7 +80,7 @@ let ssa=$ssx/2
 
 clear
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                    ⇱ SERVER INFORMATION ⇲                       \E[0m"
+echo -e "\E[44;1;39m                   ⇱ SERVER INFORMATION ⇲                      \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"                                                                      
 echo -e " ${YELLOW}SYSTEM OS | CPU USE${NC}: ${Cyan}$MODEL | $LOADVPU%${NC}"
 echo -e " ${YELLOW}SERVER RAM | USAGE${NC} : ${Cyan}$RAM MB $NC | $USAGERAM MB"
@@ -90,7 +90,7 @@ echo -e " ${YELLOW}DOMAIN${NC}             : ${Cyan}$domain${NC}"
 echo -e " ${YELLOW}NS DOMAIN${NC}          : ${Cyan}$NS${NC}"
 echo -e " ${YELLOW}IP VPS${NC}             : ${Cyan}$IPVPS${NC}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "[ ${Blue}XRAY: ${status_xray} ]    [ ${Blue}NGINX: ${status_nginx} ]    [ ${Blue}HAPROXY: ${status_haproxy} ]"
+echo -e "     [ ${Blue}XRAY: ${status_xray} ]      [ ${Blue}NGINX: ${status_nginx} ]      [ ${Blue}HAPROXY: ${status_haproxy} ]"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "    ${RED}[ TODAY : $ttoday ]${NC}                ${RED}[ MONTH : $bmon ]${NC} "
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
@@ -107,10 +107,10 @@ echo -e " ${BICyan}[${BIWhite}08${BICyan}]${RED} •${NC} ${CYAN}INFO PORT      
 echo -e " ${BICyan}[${BIWhite}09${BICyan}]${RED} •${NC} ${CYAN}VPS INFO        $NC  ${BICyan}[${BIWhite}19${BICyan}]${RED} • ${NC}${CYAN}CLEAR LOG $NC"
 echo -e " ${BICyan}[${BIWhite}10${BICyan}]${RED} •${NC} ${CYAN}SPEEDTEST       $NC  ${BICyan}[${BIWhite}20${BICyan}]${RED} • ${NC}${CYAN}EXIT FROM SCRIPT $NC"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                ⇱ FREE TUNNELING PROJECT ⇲                       \E[0m"
+echo -e "\E[44;1;39m               ⇱ FREE TUNNELING PROJECT ⇲                      \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"                                                                      
 echo -e "${BICyan}┌────────────────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC  ${BICyan}│"
+echo -e "${BICyan}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC ${BICyan}│"
 echo -e "${BICyan}│  \033[0m ${BICyan} $ssh1        $vma           $vla          $tra              $ssa   $NC    ${BICyan} │"
 echo -e "${BICyan}└────────────────────────────────────────────────────────────┘${NC}"
 echo -e ""
