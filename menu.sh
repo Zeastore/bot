@@ -1,14 +1,27 @@
 #!/bin/bash
 # COLOR VALIDATION
 clear
-RED='\033[0;31m'
+BIBlack='\033[1;90m'      # Black
+BIRed='\033[1;91m'        # Red
+BIGreen='\033[1;92m'      # Green
+BIYellow='\033[1;93m'     # Yellow
+BIBlue='\033[1;94m'       # Blue
+BIPurple='\033[1;95m'     # Purple
+BICyan='\033[1;96m'       # Cyan
+BIWhite='\033[1;97m'      # White
+UWhite='\033[4;37m'       # White
+On_IPurple='\033[0;105m'  #
+On_IRed='\033[0;101m'
+IBlack='\033[0;90m'       # Black
+IRed='\033[0;91m'         # Red
+IGreen='\033[0;92m'       # Green
+IYellow='\033[0;93m'      # Yellow
+IBlue='\033[0;94m'        # Blue
+IPurple='\033[0;95m'      # Purple
+ICyan='\033[0;96m'        # Cyan
+IWhite='\033[0;97m'       # White
+CYAN='\033[0;96]'         # Cyan
 NC='\e[0m'
-gray="\e[1;30m"
-Blue="\033[1;36m"
-GREEN='\033[0;32m'
-grenbo="\e[92;1m"
-YELL='\033[0;33m'
-BGX="\033[42m"
 UPDATE="https://raw.githubusercontent.com/Zeadxt/rzk/main/"
 BOT="https://raw.githubusercontent.com/Zeadxt/rzk/main/"
 ISP=$(cat /etc/xray/isp)
@@ -92,8 +105,11 @@ echo -e " ${BICyan}[${BIWhite}08${BICyan}]${RED} •${NC} ${CYAN}INFO PORT      
 echo -e " ${BICyan}[${BIWhite}09${BICyan}]${RED} •${NC} ${CYAN}VPS INFO        $NC  ${BICyan}[${BIWhite}19${BICyan}]${RED} • ${NC}${CYAN}CLEAR LOG $NC"
 echo -e " ${BICyan}[${BIWhite}10${BICyan}]${RED} •${NC} ${CYAN}SPEEDTEST       $NC  ${BICyan}[${BIWhite}20${BICyan}]${RED} • ${NC}${CYAN}EXIT FROM SCRIPT $NC"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\e[1;97;101m                  FREE TUNNELING PROJECT              \e[0m"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+
+echo -e "\E[44;1;39m                    ⇱ SERVER INFORMATION ⇲                       \E[0m"
+
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"                                                                      
+
 echo -e "${BICyan}┌────────────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC  ${BICyan}│"
 echo -e "${BICyan}│  \033[0m ${BICyan} $ssh1        $vma           $vla          $tra              $ssa   $NC    ${BICyan} │"
