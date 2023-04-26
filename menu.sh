@@ -33,14 +33,14 @@ CITY=$(cat /etc/xray/city)
 IPVPS=$(curl -s ipv4.icanhazip.com)
 domain=$(cat /etc/xray/domain)
 RAM=$(free -m | awk 'NR==2 {print $2}')
-USAGERAM=$(free -m | awk 'NR==2 {print $3}')
+rak=$(free -m | awk 'NR==2 {print $3}')
 MEMOFREE=$(printf '%-1s' "$(free -m | awk 'NR==2{printf "%.2f%", $3*100/$2 }')")
-LOADCPU=$(printf '%-0.00001s' "$(top -bn1 | awk '/Cpu/ { cpu = "" 100 - $8 "%" }; END { print cpu }')")
+vcp=$(printf '%-0.00001s' "$(top -bn1 | awk '/Cpu/ { cpu = "" 100 - $8 "%" }; END { print cpu }')")
 MODEL=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
 CORE=$(printf '%-1s' "$(grep -c cpu[0-9] /proc/stat)")
 Exp="LIFETIME"
 Name="RizkiHdyt | Muslihudin"
-DATEVPS=$(date +'%d/%m/%Y')
+DATEVPS=$(date +'%d-%m-%Y')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 SERONLINE=$(uptime -p | cut -d " " -f 2-10000)
 
@@ -83,13 +83,13 @@ clear
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                   ⇱ SERVER INFORMATION ⇲                      \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"                                                                      
-echo -e " ${YELLOW}SYSTEM OS | CPU USE${NC} : ${Cyan}$MODEL | $LOADCPU%${NC}"
-echo -e " ${YELLOW}SERVER RAM | USAGE${NC}  : ${Cyan}$RAM MB  | $USAGERAM MB${NC}"
-echo -e " ${YELLOW}SERVER UPTIME${NC}       : ${Cyan}$SERONLINE${NC}"
-echo -e " ${YELLOW}DATE & TIME${NC}         : ${Cyan}$DATEVPS | $TIMEZONE${NC}"
-echo -e " ${YELLOW}DOMAIN${NC}              : ${Cyan}$domain${NC}"
-echo -e " ${YELLOW}NS DOMAIN${NC}           : ${Cyan}$NS${NC}"
-echo -e " ${YELLOW}IP VPS${NC}              : ${Cyan}$IPVPS${NC}"
+echo -e " ${YELLOW}⇲ SYSTEM OS | CPU USE${NC} : ${Cyan}$MODEL | CPU USE $vcp%${NC}"
+echo -e " ${YELLOW}⇲ SERVER RAM | USAGE${NC}  : ${Cyan}$RAM MB  | $rak MB${NC}"
+echo -e " ${YELLOW}⇲ SERVER UPTIME${NC}       : ${Cyan}$SERONLINE${NC}"
+echo -e " ${YELLOW}⇲ DATE & TIME${NC}         : ${Cyan}$DATEVPS | $TIMEZONE${NC}"
+echo -e " ${YELLOW}⇲ DOMAIN${NC}              : ${Cyan}$domain${NC}"
+echo -e " ${YELLOW}⇲ NS DOMAIN${NC}           : ${Cyan}$NS${NC}"
+echo -e " ${YELLOW}⇲ IP VPS${NC}              : ${Cyan}$IPVPS${NC}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "     [ ${Cyan}XRAY:${NC} ${status_xray} ]      [ ${Cyan}NGINX:${NC} ${status_nginx} ]      [ ${Cyan}HAPROXY:${NC} ${status_haproxy} ]"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
@@ -111,7 +111,7 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[44;1;39m               ⇱ FREE TUNNELING PROJECT ⇲                      \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"                                                                      
 echo -e "${BICyan}┌────────────────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC ${BICyan}│"
+echo -e "${BICyan}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC ${BICyan} │"
 echo -e "${BICyan}│  \033[0m ${BICyan} $ssh1        $vma           $vla          $tra              $ssa   $NC    ${BICyan} │"
 echo -e "${BICyan}└────────────────────────────────────────────────────────────┘${NC}"
 echo -e ""
